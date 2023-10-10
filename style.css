@@ -303,7 +303,7 @@ content: "what i know";
 .skills .skills-content .left p{
     text-align: justify;
 }
-
+/*
 .skills .skills-content .left a{
     color: rgb(16, 17, 17);
     font-size: 18px;
@@ -321,7 +321,7 @@ content: "what i know";
     color: gold;    
     background: rgb(16, 17, 17);
 }
-
+*/
 .skills .skills-content .right .bars{
    margin-bottom: 15px;
 }
