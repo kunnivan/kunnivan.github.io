@@ -127,6 +127,19 @@
 
 
 /*section - use similar codes*/
+.about, .education, .skills{
+    font-family: 'Arial', sans-serif;
+}
+
+.about .about-content,
+.education .education-content,
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 section{
     padding: 100px 0;
 }
@@ -164,20 +177,8 @@ section .title::after{
 }
 
 /*About Section Styling*/
-.about, .education{
-    font-family: 'Arial', sans-serif;
-}
-
 .about .title::after{    
     content: "who i am";
-}
-
-.about .about-content,
-.education .education-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .about .about-content .left{
@@ -252,11 +253,25 @@ background: none;
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
+    transform: scale(1.05);
+}
+
+.education .education-content .card:hover{
+    background: gold;
+    color: black;
 }
 
 .education .education-content .card i{
     font-size: 50px;
     color: gold;
+}
+
+.education .education-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.education .education-content .card:hover .box{
+    transform: scale(1.05);
 }
 
 .education .education-content .card .text{
@@ -269,9 +284,50 @@ background: none;
     width: 100px;
 }
 
+
+/*My skills section Styling*/
+.skills .title::after{
+content: "what i know";
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .right .bars{
+   margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .skills .skills-content .right span{
+    font-size: 18px;
+    font-weight: 500;
+ }
+
+ .skills .skills-content .right .line{
+    height: 5px;
+    width: 100px;
+    background: rgb(7, 73, 255);
+ }
+
+
+
+
+
 /* diri mag sugod ang responsive media query */
 
-@media (max-width: 945px){
+@media (max-width: 947px){
   
     .menu-btn{
         display: block;
@@ -333,6 +389,11 @@ background: none;
         flex: 100%;
     }
 
+    .education .education-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (max-width: 690px){
@@ -351,6 +412,10 @@ background: none;
     .home .home-content a{
         font-size: 18px;
         padding: 8px 25px;
+    }
+
+    .education .education-content .card{
+        width: 100%;
     }
 }
 
