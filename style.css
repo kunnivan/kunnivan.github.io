@@ -125,15 +125,13 @@
 }
 
 
-/*About Section Styling*/
+
+/*section - use similar codes*/
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: 'Arial', sans-serif;
-}
 
-.about .title{
+section .title{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
@@ -143,7 +141,7 @@ section{
     position: relative;
 }
 
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     width: 180px;
@@ -154,8 +152,7 @@ section{
     transform: translateX(-50%);
 }
 
-.about .title::after{
-    content: "who i am";
+section .title::after{
     position: absolute;
     bottom: -15px;
     left: 50%;
@@ -166,7 +163,17 @@ section{
     transform: translateX(-50%);
 }
 
-.about .about-content{
+/*About Section Styling*/
+.about, .education{
+    font-family: 'Arial', sans-serif;
+}
+
+.about .title::after{    
+    content: "who i am";
+}
+
+.about .about-content,
+.education .education-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -223,52 +230,44 @@ section{
 
 
 /*Education Attainment section Styling*/
-.education{
-    font-family: 'Arial', sans-serif;
+.education {
     color: white;
     background: rgb(16, 17, 17);
 }
 
-.education .title{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    position: relative;
-}
-
 .education .title::before{
-    content: "";
-    position: absolute;
-    width: 180px;
-    height: 3px;
     background: rgb(16, 17, 17);
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .education .title::after{
-    content: "results I got";
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    font-size: 15px;
-    color: gold;
-    padding: 5px;
-    background: rgb(16, 17, 17);
-    transform: translateX(-50%);
+content: "results I got";
+color: gold;
+background: none;
 }
 
 .education .education-content .card{    
     width: calc(33% - 20px);
-    background: rgb(58, 58, 58);
+    background: rgb(32, 32, 32);
     text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
 }
 
+.education .education-content .card i{
+    font-size: 50px;
+    color: gold;
+}
 
+.education .education-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.education .education-content .card img{
+    width: 100px;
+}
 
 /* diri mag sugod ang responsive media query */
 
