@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LSK Vanexus</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -17,11 +20,11 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#">Work Experience</a></li>
+                <li><a href="#workexperience">Work Experience</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <div class="menu-btn">
-                <i class="fas fa-bars">|||</i>
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
@@ -62,7 +65,6 @@
         <div class="education-content">  
             <div class="card">
                 <div class="box">
-                    <i class="fa fa-paint-brush"></i>
                     <img src="images/vcilogo.png" alt="PCC School Logo">
                     <div class="text">Certificate of Teaching</div>
                     <p>Valencia Colleges, Inc.</p>
@@ -71,7 +73,6 @@
             </div>
             <div class="card">
                 <div class="box">
-                    <i class="fas fa-code"></i>
                     <img src="images/pcclogo.png" alt="PCC School Logo">
                     <div class="text">BS Information Technology</div>
                     <p>Philippine Countryville College, Inc.</p>
@@ -80,7 +81,6 @@
             </div>
             <div class="card">
                 <div class="box">
-                    <i class="fas fa-chart-line"></i>
                     <img src="images/pcclogo.png" alt="PCC School Logo" class=".education .education-content .card img">
                     <div class="text">Computer Programming</div>
                     <p>Philippine Countryville College, Inc.</p>
@@ -168,13 +168,91 @@
 <section class="workexperience" id="workexperience">
     <div class="max-width">
         <h2 class="title">Work Experience</h2>
-        <div class="workexperience-content">
-            
+        <div class="carousel owl-carousel">
+            <div class="card">
+                <div class="box">
+                    <img src="images/logoQuezonBukidnon.png" alt="LGU Quezon Bukidnon Seal">
+                    <div class="text">LGU - Quezon, Bukidnon</div>
+                    <p>Administrative Aide III</p>
+                    <p>Management Information System Section</p>
+                    <p>July 1, 2019 up to date</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="images/logoQuezonBukidnon.png" alt="LGU Quezon Bukidnon Seal">
+                    <div class="text">LGU - Quezon, Bukidnon</div>
+                    <p>Administrative Aide III</p>
+                    <p>Business Permits and Licenses Division</p>
+                    <p>October 25, 2016 to June 30, 2019</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="images/logoQuezonBukidnon.png" alt="LGU Quezon Bukidnon Seal">
+                    <div class="text">LGU - Quezon, Bukidnon</div>
+                    <p>Administrative Aide III</p>
+                    <p>MMO - Personal Staff</p>
+                    <p>February 1, 2016 to October 24, 2016</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="images/logoQuezonBukidnon.png" alt="LGU Quezon Bukidnon Seal">
+                    <div class="text">LGU - Quezon, Bukidnon</div>
+                    <p>Job Order(Clerk)</p>
+                    <p>MMO - Personal Staff</p>
+                    <p>January 15, 2014 to January 31, 2016</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="images/logoQuezonBukidnon.png" alt="LGU Quezon Bukidnon Seal">
+                    <div class="text">LGU - Quezon, Bukidnon</div>
+                    <p>Job Order(Clerk)</p>
+                    <p>General Service Division</p>
+                    <p>July 1, 2010 to January 31, 2016</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-
+<!-- Contact Section Start-->
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact Me</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Get in Touch</div>
+                <p>Want to get in touch? I love to hear from you. Here's how you can reach me...</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fa fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Ivan John Nacion</div>                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fa fa-marker"></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="sub-title">Poblacion, Quezon, Bukidnon</div>                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fa fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">kunnivan@gmail.com</div>                            
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
 
 
 <script src="script.js"></script>

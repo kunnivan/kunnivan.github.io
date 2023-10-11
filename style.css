@@ -127,13 +127,15 @@
 
 
 /*section - use similar codes*/
-.about, .education, .skills{
+.about, .education, .skills,
+.workexperience, .contact{
     font-family: 'Arial', sans-serif;
 }
 
 .about .about-content,
 .education .education-content,
-.skills .skills-content{
+.skills .skills-content,
+.contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -231,19 +233,21 @@ section .title::after{
 
 
 /*Education Attainment section Styling*/
-.education {
+.education, .workexperience {
     color: white;
     background: rgb(16, 17, 17);
 }
 
-.education .title::before{
-    background: rgb(16, 17, 17);
+.education .title::before,
+.workexperience .title::before{
+    background: white;
 }
 
-.education .title::after{
+.education .title::after,
+.workexperience .title::after{
 content: "results I got";
 color: gold;
-background: none;
+background: rgb(16, 17, 17);
 }
 
 .education .education-content .card{    
@@ -387,8 +391,95 @@ content: "what i know";
  }
 
 
+ /*Work Experience section styling*/
+.workexperience .title::after{
+    content: "work history";
+}
+
+.workexperience .carousel .card{
+    background: rgb(32, 32, 32);
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.workexperience .carousel .card:hover{
+    background: gold;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.workexperience .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.workexperience .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.workexperience .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.workexperience .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+   /* border-radius: 50%;
+    border: 5px solid gold; */
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid gold!important;
+}
+
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover{
+    background: gold!important;
+}
+
+/*Contact Section Styling*/
+.contact .title::after{
+    content: "get in touch";
+}
 
 
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+    margin-bottom: 10px;
+}
 
 
 /* diri mag sugod ang responsive media query */
