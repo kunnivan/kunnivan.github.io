@@ -4,6 +4,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* Set Max-width and Margin */
 .max-width{
@@ -73,6 +76,33 @@
     display: none;
 }
 
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(16, 17, 17);
+    color: gold;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    z-index: 999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;   
+    border: 1px solid gold;
+}
+
+.scroll-up-btn.show{    
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30px;
+}
+
+
 /*Diri ang styling sa home section*/
 .home{
     display: flex;
@@ -128,7 +158,7 @@
 
 /*section - use similar codes*/
 .about, .education, .skills,
-.workexperience, .contact{
+.workexperience, .contact, .footer{
     font-family: 'Arial', sans-serif;
 }
 
@@ -481,6 +511,118 @@ content: "what i know";
     margin-bottom: 10px;
 }
 
+.contact .contact-content .left .icons{
+   margin: 10px 0;
+   
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+ }
+ 
+ .contact .contact-content .row .info{
+    margin-left: 30px;
+ }
+
+/*
+ .contact .contact-content .row i{
+    font-size: 20px;
+    color: gold;
+ }*/
+
+ .contact .contact-content .info .head{
+    font-size: 20px;
+    font-weight: 500;
+ }
+
+ .contact .contact-content .info .sub-title{
+    color: #333;
+ }
+ 
+ .contact .right form .fields{
+    display: flex;
+ }
+
+ .contact .right form .field,
+ .contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+ }
+
+.contact .right form .textarea{
+    height: 80px;    
+    width: 100%;
+}
+
+ .contact .right form .name{
+    margin-right: 10px;
+ }
+
+ .contact .right form .email{
+    margin-left: 10px;
+ }
+
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(2, 81, 250);
+    cursor: pointer;
+    background: rgb(2, 81, 250);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .button button:hover{
+    color: rgb(2, 81, 250);
+    background: none;
+}
+
+
+/*Footer Section Styling*/
+footer{
+    background: rgb(16, 17, 17);
+    padding: 20px 23px;
+    color: white;
+}
+
+footer span a{
+    color: gold;    
+    text-decoration: none;
+}
+
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
 
 /* diri mag sugod ang responsive media query */
 
@@ -551,7 +693,8 @@ content: "what i know";
         margin-bottom: 20px;
     }
 
-    .skills .skills-content .column{
+    .skills .skills-content .column,
+    .contact .contact-content .column{
         width: 100%;
         margin-bottom: 40px;
     }
